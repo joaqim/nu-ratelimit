@@ -1,0 +1,6 @@
+{
+	name: nu-ratelimit
+	type: module
+	version: 0.1.0
+	description: "A simple ratelimiter for Nushell."
+}
