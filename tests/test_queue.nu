@@ -1,7 +1,10 @@
 use std assert
 
+export-env {
+     $env._RATELIMIT_QUEUE_LIST = [ ] 
+}
+
 use ../queue.nu
-export-env { $env._RATELIMIT_QUEUE_LIST = [ ] }
 
 #[test]
 export def basic_queue_functionality [] {

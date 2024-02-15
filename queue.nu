@@ -1,7 +1,7 @@
 # https://github.com/nushell/nu_scripts/blob/main/modules/weather/timed_weather_run_env.nu
 
 # Create a mutable list to hold queue history
-#export-env { $env.$env._RATELIMIT_QUEUE_LIST = [ ] }
+export-env { $env._RATELIMIT_QUEUE_LIST = [ ] }
 
 export def --env enqueue [item: any] -> list {
     $env._RATELIMIT_QUEUE_LIST = ($env._RATELIMIT_QUEUE_LIST | append $item)

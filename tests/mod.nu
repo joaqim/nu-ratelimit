@@ -1,6 +1,7 @@
 export-env { 
-    $env._RATELIMIT_QUEUE_LIST = [ ] 
-    $env.SLEEP_LOG = [ ] 
+    use ./test_queue.nu
+    use ./test_ratelimit.nu
 }
+
 export use ./test_queue.nu
 export use ./test_ratelimit.nu
