@@ -34,7 +34,7 @@ export def --env main [--requests-per-interval = 240, --interval-seconds = 60] {
             queue reset
             # Allow interrupt to sleep without throwing error
             try {
-                sleep $delay
+                return (sleep $delay)
             }
         }
     }
